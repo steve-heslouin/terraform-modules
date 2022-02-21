@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - [#548](https://github.com/XenitAB/terraform-modules/pull/548) Enable grafana-agent in Prometheus.
 - [#558](https://github.com/XenitAB/terraform-modules/pull/558) Add ClusterRole `kubectl get nodes` to tenants.
 - [#560](https://github.com/XenitAB/terraform-modules/pull/560) Add SecretProviderClass CRD to ClusterRole `custom_resource_edit`.
+- [#561](https://github.com/XenitAB/terraform-modules/pull/561) [Breaking] Add kubelet_disk_type as a config to AKS additional_node_pools. this allows us to use `Temporary` disk types.
 
 ### Changed
 
