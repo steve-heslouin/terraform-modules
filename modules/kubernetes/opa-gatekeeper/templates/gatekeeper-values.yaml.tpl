@@ -9,9 +9,7 @@ controllerManager:
   metricsPort: 8011
   healthPort: 8012
   %{~ endif ~}
-  priorityClassName: platform-high
 audit:
-  priorityClassName: platform-high
   resources:
     limits:
       memory: 750Mi
