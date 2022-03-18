@@ -1,9 +1,8 @@
 postInstall:
   labelNamespace:
     enabled: false
-experimentalEnableMutation: true
 controllerManager:
-  %{~ if provider == "aws" ~}
+  %{~ if provider == "not-aws" ~}
   hostNetwork: true
   port: 8010
   metricsPort: 8011
@@ -16,7 +15,7 @@ audit:
     requests:
       cpu: 100m
       memory: 256Mi
-  %{~ if provider == "aws" ~}
+  %{~ if provider == "not-aws" ~}
   hostNetwork: true
   metricsPort: 8013
   healthPort: 8014
